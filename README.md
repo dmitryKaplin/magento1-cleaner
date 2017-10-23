@@ -12,10 +12,6 @@
 
 ## Documentation
 1. [Update from modman](#update-from-modman)
-2. [Enable/Disable](#to-enabledisable-module-functionality)
-
-#### To Enable/Disable module functionality
-Go to **System → Configuration → BIGDRoP → Catalog Widgets → General settings**
 
 #### Update from modman
 `modman update magento1-cleaner`
