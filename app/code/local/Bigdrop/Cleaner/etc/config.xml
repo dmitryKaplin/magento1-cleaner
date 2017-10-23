@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module for clear magento system
+ *
+ * @category Bigdrop
+ * @package  Bigdrop_Cleaner
+ * @author   Dmitry Kaplin <dmitry.kaplin@bigdropinc.com>
+ */
+-->
+<config>
+    <modules>
+        <Bigdrop_Cleaner>
+            <version>0.0.1</version>
+        </Bigdrop_Cleaner>
+    </modules>
+    <global>
+        <blocks>
+            <bd_cleaner>
+                <class>Bigdrop_Cleaner_Block</class>
+            </bd_cleaner>
+        </blocks>
+        <helpers>
+            <bd_cleaner>
+                <class>Bigdrop_Cleaner_Helper</class>
+            </bd_cleaner>
+        </helpers>
+        <models>
+            <bd_cleaner>
+                <class>Bigdrop_Cleaner_Model</class>
+            </bd_cleaner>
+        </models>
+    </global>
+    <crontab>
+        <jobs>
+            <bd_cleaner_session>
+                <schedule><cron_expr>0 * * * *</cron_expr></schedule>
+                <run><model>bd_cleaner/observer_session::execute</model></run>
+            </bd_cleaner_session>
+            <bd_cleaner_report>
+                <schedule><cron_expr>0 0 * * *</cron_expr></schedule>
+                <run><model>bd_cleaner/observer_report::execute</model></run>
+            </bd_cleaner_report>
+        </jobs>
+    </crontab>
+    <default>
+        <bd_cleaner>
+            <settings>
+                <session_enabled>1</session_enabled>
+                <report_enabled>1</report_enabled>
+                <log_enabled>1</log_enabled>
+                <log_file>cleaner.log</log_file>
+            </settings>
+        </bd_cleaner>
+    </default>
+</config>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module for clear magento system
+ *
+ * @category Bigdrop
+ * @package  Bigdrop_Cleaner
+ * @author   Dmitry Kaplin <dmitry.kaplin@bigdropinc.com>
+ */
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <bd_cleaner translate="title" module="bd_cleaner">
+                                        <title>System Cleaner Configurations</title>
+                                    </bd_cleaner>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

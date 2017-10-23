@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Module for clear magento system
+ *
+ * @category Bigdrop
+ * @package  Bigdrop_Cleaner
+ * @author   Dmitry Kaplin <dmitry.kaplin@bigdropinc.com>
+ */
+-->
+<config>
+    <modules>
+        <Bigdrop_Cleaner>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Bigdrop_Cleaner>
+    </modules>
+</config>
