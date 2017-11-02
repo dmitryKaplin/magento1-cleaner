@@ -1,2 +1,2 @@
-app/etc/modules/Bigdrop_Cleaner.xml app/etc/modules/Bigdrop_Cleaner.xml
-app/code/local/Bigdrop/Cleaner/*    app/code/local/Bigdrop/Cleaner/
+app/etc/modules/Bigdrop_Cleaner.xml  app/etc/modules/Bigdrop_Cleaner.xml
+app/code/community/Bigdrop/Cleaner/* app/code/community/Bigdrop/Cleaner/

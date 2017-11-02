@@ -12,7 +12,7 @@
     <modules>
         <Bigdrop_Cleaner>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </Bigdrop_Cleaner>
     </modules>
 </config>
